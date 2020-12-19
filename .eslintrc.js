@@ -39,6 +39,7 @@ module.exports = {
         'import/extensions': ['error', 'never'],
         indent: 'off',
         '@typescript-eslint/indent': ['error'],
+        'max-len': { code: 115 },
     },
     settings: {
         'import/parsers': {
