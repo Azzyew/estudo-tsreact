@@ -23,16 +23,16 @@ type Props = StateProps & DispatchProps;
 
 class RepositoryList extends Component<Props> {
     componentDidMount() {
-      const { loadRequest } = this.props
+        const { loadRequest } = this.props;
 
-      loadRequest();
+        loadRequest();
     }
 
     render() {
         const { repositories } = this.props;
         return (
-            <ul>
-              {repositories.map(repository => repository.name)}
+          <ul>
+              {repositories.map((repository) => repository.name)}
             </ul>
         );
     }
@@ -43,6 +43,7 @@ const mapStateToProps = (state: ApplicationState) => ({
     // isso é repassado como propriedade pra dentro do componente (usar o this.props depois)
 });
 
+// eslint-disable-next-line max-len
 const mapDispatchToProps = (dispatch: Dispatch) => bindActionCreators(RepositoriesActions, dispatch);
 
 export default connect(mapStateToProps, mapDispatchToProps)(RepositoryList);
