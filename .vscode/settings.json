@@ -2,5 +2,6 @@
     "eslint.codeAction.showDocumentation": {
     
         "enable": true
-    }
+    },
+    "explorer.compactFolders": false
 }

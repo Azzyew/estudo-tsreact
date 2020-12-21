@@ -7,7 +7,7 @@ const INITIAL_STATE: RepositoriesState = {
     loading: false,
 };
 
-// reducer recebe um parametro pra saber o formato q o reducer vai manipular os dados
+// reducer recebe um parâmetro pra saber o formato q o reducer vai manipular os dados
 const reducer: Reducer<RepositoriesState> = (state = INITIAL_STATE, action) => {
     switch (action.type) {
         case RepositoriesTypes.LOAD_REQUEST:

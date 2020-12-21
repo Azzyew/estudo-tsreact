@@ -4,6 +4,7 @@ import { bindActionCreators, Dispatch } from 'redux';
 import { Repository } from '../../store/ducks/repositories/types';
 import { ApplicationState } from '../../store';
 import * as RepositoriesActions from '../../store/ducks/repositories/actions';
+import RepositoryItem from '../RepositoryItem';
 
 interface StateProps {
 // mapear o tipo das informações que vêm do mapStateToProps
@@ -32,7 +33,9 @@ class RepositoryList extends Component<Props> {
         const { repositories } = this.props;
         return (
             <ul>
-                {repositories.map((repository) => repository.name)}
+                {repositories.map((repository) => (
+                    <RepositoryItem key={repository.id} repository={repository} />
+                ))}
           </ul>
         );
     }
