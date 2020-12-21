@@ -38,12 +38,17 @@
         "@typescript-eslint/no-empty-function": "off",
         "import/extensions": ["error", "never"],
         "indent": "off",
-        "@typescript-eslint/indent": ["error"],
+        "@typescript-eslint/indent": 0,
+        "linebreak-style": 0,
         "import/no-unresolved": [
             2,
             { "caseSensitive": false }
         ],
+        "object-curly-newline": 0,
+        "react/jsx-indent": 0,
         "no-use-before-define": "off",
+        "react/jsx-closing-tag-location": 0,
+        "no-shadow": 0,
         "@typescript-eslint/no-use-before-define": ["error"]
     },
     "settings": {
