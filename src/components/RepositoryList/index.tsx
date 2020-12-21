@@ -32,11 +32,11 @@ class RepositoryList extends Component<Props> {
     render() {
         const { repositories } = this.props;
         return (
-            <ul>
+            <div className="page-wrapper">
                 {repositories.map((repository) => (
                     <RepositoryItem key={repository.id} repository={repository} />
                 ))}
-          </ul>
+          </div>
         );
     }
 }

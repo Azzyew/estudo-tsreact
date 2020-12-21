@@ -6,5 +6,9 @@ interface OwnProps {
 }
 
 export default function RepositoryItem({ repository }: OwnProps) {
-    return <li>{repository.name}</li>;
+    return (
+        <div className="card">
+            <h3>{repository.name}</h3>
+        </div>
+    );
 }
